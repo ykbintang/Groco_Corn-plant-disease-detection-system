@@ -1,0 +1,92 @@
+.containermain {
+    margin-top: 2.3%;
+    margin-right: 10%;
+    position: relative;
+    display: flex;
+    padding-top: 0.2%;
+    gap: 10px;
+    flex-direction: row;
+    height: 75%;
+    padding-left: 4%;
+    border-radius: 10px;
+    border: 2px solid rgb(66, 65, 65);
+    color: #444;
+    background-color: white;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+  
+  .containermain:hover .drop-title {
+    color: #222;
+  }
+
+  .containermain h1{
+    font-size: 2rem;
+  }
+  
+  .drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+  }
+
+  #container1{
+    width: 40%;
+  }
+  
+  #container2{
+    width: 40%;
+    margin: 2% 0;
+    font-size: 1.2rem;
+    margin-right: -50%;
+  }
+
+  #container2 p {
+    text-align: justify;
+  }
+
+  #containernama{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  }
+
+  .containermain{
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #container1 img{
+    height: 80%;
+    max-height: 75%;
+    max-width: 80%;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+
+  @media only screen and (max-width: 659px) {
+    #submain{
+        font-size: 1.3rem;
+        margin-top: -2%;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+
+    .containermain{
+      flex-direction: column;
+      height: fit-content;
+    }
+
+    #container1 {
+      width: 100%;
+    }
+
+    #container2 {
+      width: 100%;
+    }
+}

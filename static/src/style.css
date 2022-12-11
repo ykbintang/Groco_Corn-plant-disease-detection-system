@@ -1,0 +1,127 @@
+*{
+    font-family: 'Inter';
+}
+
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #326342;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 2vw;
+    margin-top: -0.8%;
+}
+
+header div{
+    display: block;
+    height: auto;
+}
+
+#navigasi a{
+    margin-right: 7%;
+    font-size: 1.2rem;
+}
+
+main{
+    background-color: #f3f5f1;
+    height: fit-content;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 10%;
+}
+
+a{
+    text-decoration: none;
+    color: #DBF227;
+}
+
+#tittlemain{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #454546;
+}
+
+#submain{
+    font-size: 1.5rem;
+    height: auto;
+    margin-top: -1.2%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (min-width: 660px) {
+
+    header a{
+        position: relative;
+        top: 40%;
+    }
+    
+    #judul{
+        margin-top: 0.75%;
+        width: 15vw;
+        margin-right: 50vw;
+        top: 20%;
+    }
+    
+    #judul img{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    
+    #navigasi{
+        margin-top: 0.7%;
+        width: 30vw;
+    }
+
+    footer{
+        justify-content: end;
+        background-color: #F2F2F2;
+        margin-bottom: 0.2%;
+    }
+}
+
+@media only screen and (max-width: 659px) {
+    header{
+        height: 8vh;
+    }
+
+    #judul img{
+        height: 50%;
+        display: block;
+        margin-top: 20%;
+    }
+
+    #navigasi{
+        margin-left: 30%;
+        margin-top: 4.5%;
+        width: 60%;
+    }
+
+    footer{
+        padding-left: 75%;
+        background-color: #F2F2F2;
+        margin-bottom: 0.2%;
+        display: block;
+    }
+
+    #tittlemain{
+        font-size: 1.3rem;
+    }
+
+    #submain{
+        font-size: 2rem;
+    }
+}
