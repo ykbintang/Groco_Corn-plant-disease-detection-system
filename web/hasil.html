@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='images/groco.ico') }}">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='src/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='src/hasil.css') }}">
+  <title>Deteksi Penyakit Jagung</title>
+</head>
+<body>
+
+  <header>
+    <div id="judul">
+      <img src="{{ url_for('static',filename='images/icon.png') }}" alt="icon">
+    </div>
+    <div id="navigasi">
+      <a href="{{ url_for('index') }}" id="deteksi">Deteksi</a>
+      <a href="{{ url_for('dokumentasi') }}" id="dokumentasi">Dokumentasi</a>
+      <a href="{{ url_for('tentang') }}" id="tutorial">Tentang</a>
+    </div>
+  </header>
+
+
+  <main>
+    <p id="tittlemain">Hasil Deteksi Tanaman</p>
+    <div id="submain">Berdasarkan hasil identifikasi gambar yang Anda unggah, analisis sistem kami menunjukkan bahwa tanaman jagung Anda dapat diklasifikasikan ke kategori:</div>
+    <div class="containermain">
+      
+      <div id="container1">
+        <div id="containernama"><i class="fa fa-ticket"></i><h1 id="namapenyakit">{{ penyakit }}</h1></div>
+        <img id="imageinput" src="{{ imagepath }}" alt="gambar hasil input">
+      </div>
+      
+      <div id="container2">
+        <h3>Tips</h3>
+        <p id="tips1">{{ tips1 }}</p>
+        <p id="tips2">{{ tips2 }}</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Copyright &copy; 2022. Groco. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

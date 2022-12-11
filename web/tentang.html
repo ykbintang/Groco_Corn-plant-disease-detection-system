@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='images/groco.ico') }}">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='src/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='src/tentang.css') }}">
+  <title>Deteksi Penyakit Jagung - Dokumentasi</title>
+</head>
+<body>
+
+  <header>
+    <div id="judul">
+      <img src="{{ url_for('static',filename='images/icon.png') }}" alt="icon">
+    </div>
+    <div id="navigasi">
+      <a href="{{ url_for('index') }}" id="deteksi">Deteksi</a>
+      <a href="{{ url_for('dokumentasi') }}" id="dokumentasi">Dokumentasi</a>
+      <a href="#" id="tutorial">Tentang</a>
+    </div>
+  </header>
+
+
+  <main>
+    <p id="tittlemain">Tentang Aplikasi Ini</p>
+    <div id="submain">Aplikasi ini dibuat guna memenuhi syarat kelulusan program SIB x Dicoding Batch 3. Aplikasi ini dibuat oleh tim kami dengan anggota sebagai berikut:</div>
+    <div id="containermain">
+
+      <div class="item">
+        <h3>Irka Tri Agustin</h3>
+        <img src="{{ url_for('static',filename='images/irka.jpg') }}" alt="gambar irka-tri-agustin">
+        <div class="containerlink">
+          <a href="https://www.linkedin.com/in/irka-tri-agustin-7a6083256/" target="_blank">Linkedin <i class="fa fa-linkedin-square"></i></a>
+          <a href="https://github.com/Irkatriagustin15" target="_blank">GitHub <i class="fa fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3>Zulfah Binti Toyibah</h3>
+        <img src="{{ url_for('static',filename='images/zulfah.png') }}" alt="gambar zulfah-binti-toyibah">
+        <div class="containerlink">
+          <a href="https://www.linkedin.com/in/zulfah-binti-toyibah/" target="_blank">Linkedin <i class="fa fa-linkedin-square"></i></a>
+          <a href="https://github.com/Zulfahh17" target="_blank">GitHub <i class="fa fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3>Muhammad Subarkah</h3>
+        <img src="{{ url_for('static',filename='images/subarkah.png') }}" alt="gambar muhammad-subarkah">
+        <div class="containerlink">
+          <a href="https://www.linkedin.com/in/muhammad-subarkah/" target="_blank">Linkedin <i class="fa fa-linkedin-square"></i></a>
+          <a href="https://github.com/sbrkah" target="_blank">GitHub <i class="fa fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3>Yayes Kasnanda Bintang</h3>
+        <img src="{{ url_for('static',filename='images/bintang.png') }}" alt="gambar yayes-kasnanda-bintang">
+        <div class="containerlink">
+          <a href="https://www.linkedin.com/in/ykbintang/" target="_blank">Linkedin <i class="fa fa-linkedin-square"></i></a>
+          <a href="https://github.com/ykbintang" target="_blank">GitHub <i class="fa fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Copyright &copy; 2022. Groco. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
