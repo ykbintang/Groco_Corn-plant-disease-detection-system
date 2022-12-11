@@ -20,13 +20,10 @@ Jagung adalah salah satu tanaman pangan penghasil karbohidrat yang terpenting di
 Link website GROCO:
 
 ```sh
-cd dillinger
-npm i
-node app
+https://groco.keepsmilee07.repl.co
 ```
 Link demo cara penggunaan website GROCO:
 
 ```sh
-npm install --production
-NODE_ENV=production node app
+https://youtu.be/sPa99oeOHjY
 ```
