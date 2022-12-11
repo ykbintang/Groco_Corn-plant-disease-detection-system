@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='images/groco.ico') }}">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='src/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='src/dokumentasi.css') }}">
+  <title>Deteksi Penyakit Jagung - Dokumentasi</title>
+</head>
+<body>
+
+  <header>
+    <div id="judul">
+      <img src="{{ url_for('static',filename='images/icon.png') }}" alt="icon">
+    </div>
+    <div id="navigasi">
+      <a href="{{ url_for('index') }}" id="deteksi">Deteksi</a>
+      <a href="#" id="dokumentasi">Dokumentasi</a>
+      <a href="{{ url_for('tentang') }}" id="tutorial">Tentang</a>
+    </div>
+  </header>
+
+
+  <main>
+    <p id="tittlemain">Dokumentasi Jenis Penyakit</p>
+    <div id="submain">Berikut adalah beberapa daftar penyakit pada tanaman jagung:</div>
+    <div id="containermain">
+
+      <div class="item">
+        <h3>Blight</h3>
+        <img src="{{ url_for('static',filename='images/blight.jpg') }}">
+        <p>Blight merupakan penyakit pada tanaman jagung yang disebabkan oleh <i>Exserohilum turcicum</i> yang menyebabkan daun luka berbentuk cerutu, penyakit ini berbahaya pada cuaca lembab.</p>
+      </div>
+      <div class="item">
+        <h3>Common Rust</h3>
+        <img src="{{ url_for('static',filename='images/common-rust.jpg') }}">
+        <p>Common Rust merupakan penyakit pada tanaman jagung yang menyebabkan timbulnya karat pada daun berwarna coklat manis, dan bisa menginfeksi batang pada tanaman jagung.</p>
+      </div>
+      <div class="item">
+        <h3>Gray Leaf Spot</h3>
+        <img src="{{ url_for('static',filename='images/grey-leaf-spot.jpg') }}">
+        <p>Gray Leaf Spot merupakan penyakit pada tanaman jagung yang biasa terjadi pada suhu kelembaban yang tinggi, ketika tanaman sudah terinfeksi penyakit ini dapat menyebabkan masalah yang lebih serius dibanding penyakit lainnya.</p>
+      </div>
+
+    </div>
+    <p id="subcontainer">Penyakit pada sebuah tanaman merupakan hal yang umun terjadi, tak terkecuali juga pada tanaman jagung. Mari kita tingkatkan kualitas tanaman kita dengan mengenali terlebih dahulu penyakit yang bisa menyerang tanaman kita beserta cara mengatasinya.</p>
+    
+  </main>
+
+  <footer>
+    Copyright &copy; 2022. Groco. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
